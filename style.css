@@ -10,12 +10,12 @@ html{
 }
 
 @font-face{
-	src: url('../font/Poppins-SemiBold.ttf');
+	src: url('Poppins-SemiBold.ttf');
 	font-family: "SemiBold";
 }
 
 @font-face{
-	src: url('../font/Poppins-Regular.ttf');
+	src: url('Poppins-Regular.ttf');
 	font-family: "Regular";
 }
 
