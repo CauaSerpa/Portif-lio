@@ -38,11 +38,13 @@ nav a:hover{
 }
 
 nav{
+	position: fixed;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	font-family: "Regular", sans-serif;
 	background: #181818;
+	width: 100%;
 	height: 8vh;
 }
 
@@ -148,7 +150,7 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 92vh;
+	height: 100vh;
 	background: #181818;
 }
 
