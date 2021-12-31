@@ -1,5 +1,3 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 /* Variables CSS */
 :root
 {
@@ -20,7 +18,7 @@
 /* Fonte */
 :root
 {
-	--body-font: 'Poppins', sans-serif;
+	--body-font: sans-serif;
     --title-font-size: 3rem;
 	--big-font-size: 3rem;
 	--h2-font-size: 2.5rem;
@@ -34,11 +32,11 @@
 	:root
 	{
         --title-font-size: 9rem;
-		--big-font-size: 4rem;
-		--h2-font-size: 2.5rem;
+	--big-font-size: 4rem;
+	--h2-font-size: 2.5rem;
         --average-font-size: 2.5rem;
         --p-font-size: 1.25rem;
-		--normal-font-size: 1.25rem;
+	--normal-font-size: 1.25rem;
         --little-font-size: 1rem;
 	}
 }
