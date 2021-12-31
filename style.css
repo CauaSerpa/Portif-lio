@@ -285,7 +285,7 @@ nav .nav-list li
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 100vw;
+        width: calc(100vw - 3rem);
         height: 92vh;
         background: var(--black);
         flex-direction: column;
