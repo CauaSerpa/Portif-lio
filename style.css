@@ -283,7 +283,7 @@ nav .nav-list li
     .nav-list
     {
         position: absolute;
-        top: 8vh;
+        top: calc(8vh - 3rem);
         right: 0;
         width: calc(100vw - 3rem);
         height: 92vh;
