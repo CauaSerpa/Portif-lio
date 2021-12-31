@@ -232,8 +232,8 @@ nav .logo h2 a
 nav .logo .logo__color
 {
     position: absolute;
-    left: 57px;
-    top: 12px;
+    left: 55px;
+    top: 8px;
     width: 8px;
     height: 8px;
     background: var(--white);
