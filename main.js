@@ -42,3 +42,17 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+//link active
+const navLink = document.querySelectorAll('.link')
+
+function linkAction(){
+	// Active link
+	navLink.forEach(n => n.classList.remove('active-link'))
+	this.classList.add('active-link')
+
+	const navMenu = document.getElementById('nav-list')
+	navMenu.classList.remove('show')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
