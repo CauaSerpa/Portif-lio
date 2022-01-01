@@ -7,24 +7,37 @@
     <meta name="keywords" content="palavra-chave,do,meu,site">
     <meta name="description" content="Descrição do meu site">
     <title>Site Dinâmico</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
-            <nav>
-            <div class="logo">
-                <h2><a href=""><img src="logo.png" alt=""></a></h2>
-            </div>
+            <nav class="nav">
+                <div class="logo">
+                    <h2><a href=""><img src="img/logo.png" alt=""></a></h2>
+                </div>
+                <div class="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portifolio</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="" class="hire-me buttom mobile">Hire Me</a></li>
+                    <li class="nav__item">
+                        <a href="#home" class="link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="link">Portifolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="" class="hire-me buttom mobile">Hire Me</a>
+                    </li>
                 </ul>
-
+                </div>
                 <a href="" class="hire-me buttom normal">Hire Me</a>
 
                 <div class="mobile-menu">
@@ -39,8 +52,8 @@
 
     <main class="l-main">
         <!--Home-->
-        <section class="home">
-            <div class="home__title">
+        <section class="home" id="home">
+            <div class="home__container">
                 <p class="home__title">Hi<br>I'm <span class="home__title-uppercase">Ariel</span></p>
                 <div class="title-line"></div>
                 <p class="home__text">Prefessional UI/UX Design With 4 Years Of<br>Work Experiense</p>
@@ -50,6 +63,8 @@
             <div class="home__img"></div>
 
             <div class="follow">
+                <img src="img/follow-me.png" alt="">
+                <div class="follow__line"></div>
                 <ul>
                     <li><a href=""><i class='bx bxl-facebook-circle'></i></a></li>
                     <li><a href=""><i class='bx bxl-instagram' ></i></a></li>
@@ -61,12 +76,12 @@
         <!--End Home-->
 
         <!--About-->
-        <section class="about">
+        <section class="about section" id="about">
             <h2 class="section-title">ABOUT</h2>
             <div class="center">
                 <div class="w50 left">
                     <div class="about__img">
-                        <img src="about.png">
+                        <img src="img/about.png">
                     </div>
                 </div>
                 <div class="w50 left">
@@ -80,12 +95,12 @@
                     Quisque porta enim in mollis ullamcorper.</p>
                     
                     <div class="inform">
-                        <div class="w50 left">
+                        <div class="inform__w50 left">
                             <p><span class="about__color">Age:...</span>25</p>
                             <p><span class="about__color">Freelance:...</span>Available</p>
                             <p><span class="about__color">Phone:...</span>+1-555-4258-973</p>
                         </div>
-                        <div class="w50 left">
+                        <div class="inform__w50 left">
                             <p><span class="about__color">Nationality:...</span>USA</p>
                             <p><span class="about__color">Address:...</span>New York, USA</p>
                             <p><span class="about__color">Email:...</span>contactwithme@mail.com</p>
@@ -103,72 +118,83 @@
         <!--End About-->
 
         <!--Skill-->
-        <section class="Skill">
+        <section class="skill section">
             <h2 class="section-title">SKILL</h2>
-            
-            <p class="skill__name">Adobe Photoshop</p>
-            <div class="skill__container">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div><span>90%</span></div>
-                <div class="O"></div>
-            </div>
 
-            <p class="skill__name">Adobe XD</p>
-            <div class="skill__container">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div><span>90%</span></div>
-                <div class="O"></div>
-            </div>
+            <div class="center">
 
-            <p class="skill__name">Prototyping</p>
-            <div class="skill__container">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div><span>80%</span></div>
-                <div class="O"></div>
-                <div class="O"></div>
-            </div>
+                <div class="sk">             
+                    <p class="skill__name">Adobe Photoshop</p>
+                </div>
+                <div class="skill__container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div><span>90%</span></div>
+                    <div class="O"></div>
+                </div>
 
-            <p class="skill__name">Planning & Analytis</p>
-            <div class="skill__container">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div><span>90%</span></div>
-                <div class="O"></div>
+                <div class="sk">
+                    <p class="skill__name">Adobe XD</p>
+                </div>
+                <div class="skill__container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div><span>90%</span></div>
+                    <div class="O"></div>
+                </div>
+
+                <div class="sk">
+                    <p class="skill__name">Prototyping</p>
+                </div>
+                <div class="skill__container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div><span>80%</span></div>
+                    <div class="O"></div>
+                    <div class="O"></div>
+                </div>
+
+                <div class="sk">
+                    <p class="skill__name">Planning & Analytis</p>
+                </div>
+                <div class="skill__container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div><span>90%</span></div>
+                    <div class="O"></div>
+                </div>
             </div>
         </section>
         <!--End Skill-->
 
         <!--Portifolio-->
-        <section class="portifolio">
+        <section class="portifolio section">
             <h2 class="section-title">PORTIFOLIO</h2>
 
-            <!--<div class="container__img">
+            <div class="container__img">
                 <img src="img/portifolio-1.jpg" class="portifolio__img-1" alt="">
                 <img src="img/portifolio-2.jpg" class="portifolio__img-2" alt="">
                 <img src="img/portifolio-3.jpg" class="portifolio__img-3" alt="">
@@ -177,16 +203,16 @@
                 <img src="img/portifolio-6.jpg" class="portifolio__img-6" alt="">
                 <img src="img/portifolio-7.jpg" class="portifolio__img-7" alt="">
                 <img src="img/portifolio-8.jpg" class="portifolio__img-8" alt="">
-            </div>-->
+            </div>
         </section>
         <!--End Portifolio-->
 
         <!--Feedback-->
-        <section class="feedback">
+        <section class="feedback section">
             <h2 class="section-title">FEEDBACK</h2>
 
             <div class="feedback__icon">
-                <img class="quotation" src="quotation.png">
+                <img class="quotation" src="img/quotation.png">
             </div>
             <div class="feedback__container center">
                 <div class="controller-arrow">
@@ -201,7 +227,7 @@
                     <p class="person-name">Sarah Winner</p>
                     <p class="person-work">Digital Influencer</p>
                     <div class="feedback__img">
-                        <img src="feedback.png" class="person-img" alt="">
+                        <img src="img/feedback.png" class="person-img" alt="">
                     </div>
                 </div>
             </div>
@@ -210,7 +236,7 @@
         <!--End Feedback-->
 
         <!--Contact-->
-        <section class="contact">
+        <section class="contact section">
             <h2 class="section-title">CONTACT</h2>
 
             <form class="contact__form" action="">
@@ -226,7 +252,7 @@
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__text">
-                    <a href="" class="footer__logo"><img src="logo.png" alt=""></a>
+                    <a href="" class="footer__logo"><img src="img/logo.png" alt=""></a>
                     <p class="text little">Proin at enim sit amet sem blandit fringilla vel et arcu. Vestibulum quis urna velit.
                     Donec sit amet mi imperdiet, dapibus nunc ut, posuere lacus. Integer sagittis volutpat erat, vitae eleifend nisi dictum non.</p>
                     <div class="footer__follow">
@@ -278,6 +304,6 @@
         <!--End Footer-->
     </main>
     
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
