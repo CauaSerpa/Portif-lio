@@ -947,7 +947,7 @@ input[type=submit]
 }
 @media (max-width: 1024px) {
 
-    .container__img
+    .portifolio__grid
     {
 	    display: none;
     }
