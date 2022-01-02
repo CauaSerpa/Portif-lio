@@ -949,11 +949,6 @@ input[type=submit]
 
     .container__img
     {
-        grid-template-areas: 
-        "top-left top-left"
-        "l bottom"
-        "l top"
-        "l bottom"
-        "r r";
+	    display: none;
     }
 }
